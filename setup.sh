@@ -16,6 +16,6 @@ sudo systemctl enable docker
 
 # Config SSH port
 sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bk
-sudo sed -e 's/#Port 22/Port 12222/g' /etc/ssh/sshd_config > /etc/ssh/sshd_config
+sudo sed -i -e 's/#Port 22/Port 12222/g' /etc/ssh/sshd_config
 sudo semanage port -a -t ssh_port_t -p tcp 12222
 sudo systemctl reload sshd.service
