@@ -1,4 +1,4 @@
 # CentOS7Setup
 
-for centos 7.
+CentOS 7を初期セットアップする際のスクリプトです。
 
